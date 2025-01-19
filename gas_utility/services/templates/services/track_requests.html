@@ -1,0 +1,8 @@
+<h1>Track Your Requests</h1>
+<ul>
+    {% for request in requests %}
+        <li>
+            {{ request.request_type }} - {{ request.status }} (Submitted: {{ request.created_at }})
+        </li>
+    {% endfor %}
+</ul>
